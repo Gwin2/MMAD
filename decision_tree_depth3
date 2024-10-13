@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<PAY_0 &le; 1.5<br/>gini = 0.345<br/>samples = 21000<br/>value = [16355, 4645]<br/>class = No Default>, fillcolor="#eca571"] ;
+1 [label=<PAY_2 &le; 1.5<br/>gini = 0.276<br/>samples = 18805<br/>value = [15692, 3113]<br/>class = No Default>, fillcolor="#ea9a60"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<PAY_AMT3 &le; 576.5<br/>gini = 0.243<br/>samples = 17209<br/>value = [14769, 2440]<br/>class = No Default>, fillcolor="#e9965a"] ;
+1 -> 2 ;
+3 [label=<gini = 0.339<br/>samples = 4516<br/>value = [3540, 976]<br/>class = No Default>, fillcolor="#eca470"] ;
+2 -> 3 ;
+4 [label=<gini = 0.204<br/>samples = 12693<br/>value = [11229, 1464]<br/>class = No Default>, fillcolor="#e89153"] ;
+2 -> 4 ;
+5 [label=<PAY_6 &le; 1.0<br/>gini = 0.488<br/>samples = 1596<br/>value = [923.0, 673.0]<br/>class = No Default>, fillcolor="#f8ddc9"] ;
+1 -> 5 ;
+6 [label=<gini = 0.466<br/>samples = 1122<br/>value = [707, 415]<br/>class = No Default>, fillcolor="#f4cbad"] ;
+5 -> 6 ;
+7 [label=<gini = 0.496<br/>samples = 474<br/>value = [216, 258]<br/>class = Default>, fillcolor="#dfeffb"] ;
+5 -> 7 ;
+8 [label=<PAY_3 &le; -0.5<br/>gini = 0.422<br/>samples = 2195<br/>value = [663, 1532]<br/>class = Default>, fillcolor="#8fc7f0"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<BILL_AMT5 &le; 180.0<br/>gini = 0.489<br/>samples = 139<br/>value = [80, 59]<br/>class = No Default>, fillcolor="#f8decb"] ;
+8 -> 9 ;
+10 [label=<gini = 0.46<br/>samples = 53<br/>value = [19, 34]<br/>class = Default>, fillcolor="#a8d4f4"] ;
+9 -> 10 ;
+11 [label=<gini = 0.412<br/>samples = 86<br/>value = [61, 25]<br/>class = No Default>, fillcolor="#f0b58a"] ;
+9 -> 11 ;
+12 [label=<EDUCATION &le; 4.0<br/>gini = 0.406<br/>samples = 2056<br/>value = [583, 1473]<br/>class = Default>, fillcolor="#87c4ef"] ;
+8 -> 12 ;
+13 [label=<gini = 0.402<br/>samples = 2036<br/>value = [568, 1468]<br/>class = Default>, fillcolor="#86c3ef"] ;
+12 -> 13 ;
+14 [label=<gini = 0.375<br/>samples = 20<br/>value = [15, 5]<br/>class = No Default>, fillcolor="#eeab7b"] ;
+12 -> 14 ;
+}
